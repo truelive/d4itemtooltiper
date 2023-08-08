@@ -1,0 +1,76 @@
+---
+build:
+  name: Necro Spear
+  items:
+    - item: Two-Handed Sword
+      affixes:
+        - type: "% Critical Strike Damage with Bone Skills"
+          weight: 1
+        - type: "% Critical Strike Damage"
+          weight: 1
+        - type: "% Vulnerable Damage"
+          weight: 1
+        - type: " Intelligence"
+          weight: 1
+    - item: Amulet
+      affixes:
+        - type: "Ranks of Bone Spear"
+          weight: 1
+        - type: "% Lucky Hit Chance"
+          weight: 1
+        - type: "% Movement Speed"
+          weight: 1
+        - type: "% Cooldown Reduction"
+          weight: 1
+    - item: Boots
+      affixes:
+        - type: " Ranks of Corpse Tendrils"
+          weight: 1
+        - type: "% Movement Speed"
+          weight: 1
+        - type: "% Essence Cost Reduction"
+          weight: 1
+        - type: " Intelligence"
+          weight: 1
+    - item: Chest
+      affixes:
+        - type: "% Total Armor"
+          weight: 1
+        - type: "% Damage \\["
+          weight: 1
+        - type: "% Bone Skill Damage"
+          weight: 1
+        - type: "% Physical Damage ?^[O]"
+          weight: 1
+    - item: Gloves
+      affixes:
+        - type: " Ranks of Bone Spear"
+          weight: 1
+        - type: "% Lucky Hit Chance"
+          weight: 1
+        - type: "% Critical Strike Chance"
+          weight: 1
+        - type: "Lucky Hit: Up to a \\d% Chance to Restore"
+          weight: 1
+    - item: Pants
+      affixes:
+        - type: "% Total Armor"
+          weight: 1
+        - type: "% Damage Reduction from Distant"
+          weight: 1
+        - type: " Willpower"
+          weight: 1
+        - type: " Intelligence"
+          weight: 1
+    - item: Ring
+      affixes:
+        - type: "% Critical Strike Chance"
+          weight: 1
+        - type: "% Vulnerable Damage"
+          weight: 1
+        - type: " Maximum Essence"
+          weight: 1
+        - type: " Resource Generation"
+          weight: 1
+        - type: "% Critical Strike Damage"
+          weight: 1

@@ -1,0 +1,90 @@
+---
+build:
+  name: Druid Shred
+  items:
+    - item: Axe
+      affixes:
+        - type: "% Damage to Poisoned"
+          weight: 1
+        - type: "% Damage to close"
+          weight: 1
+        - type: "% Vulnerable Damage"
+          weight: 1
+        - type: " Willpower"
+          weight: 1
+    - item: Totem
+      affixes:
+        - type: "% Cooldown Reduction"
+          weight: 1
+        - type: "% Critical Strike Chance"
+          weight: 1
+        - type: "% Damage Reduction while Fortified"
+          weight: 1
+        - type: "% Damage Reduction from Enem"
+          weight: 1
+    - item: Amulet
+      affixes:
+        - type: "Ranks of The Envenom"
+          weight: 1
+        - type: "% Damage Reduction while Fortified"
+          weight: 1
+        - type: "% Total Armor"
+          weight: 1
+        - type: "% Cooldown Reduction"
+          weight: 1
+    - item: Boots
+      affixes:
+        - type: "% Damage Reduction while Injured"
+          weight: 1
+        - type: "% Movement Speed"
+          weight: 1
+        - type: " Willpower"
+          weight: 1
+        - type: "% Total Armor"
+          weight: 1
+    - item: Chest
+      affixes:
+        - type: "% Total Armor"
+          weight: 1
+        - type: "% Damage Reduction While Fortified"
+          weight: 1
+        - type: "% Damage Reduction from"
+          weight: 1
+        - type: "Maximum Life"
+          weight: 1
+    - item: Gloves
+      affixes:
+        - type: " Ranks of Shred"
+          weight: 1
+        - type: "% Attack Speed"
+          weight: 1
+        - type: "% Critical Strike Chance"
+          weight: 1
+        - type: " Willpower"
+          weight: 1
+        - type: "Lucky Hit: Up to a \\d% Chance to Restore"
+          weight: 1
+    - item: Pants
+      affixes:
+        - type: "% Total Armor"
+          weight: 1
+        - type: "% Damage Reduction While Fortified"
+          weight: 1
+        - type: "% Damage Reduction from"
+          weight: 1
+        - type: "Maximum Life"
+          weight: 1
+        - type: " Willpower"
+          weight: 1
+    - item: Ring
+      affixes:
+        - type: "% Critical Strike Chance"
+          weight: 1
+        - type: "% Vulnerable Damage"
+          weight: 1
+        - type: " Maximum Life"
+          weight: 1
+        - type: " Resource Generation"
+          weight: 1
+        - type: "% Lucky Hit Chance"
+          weight: 1
