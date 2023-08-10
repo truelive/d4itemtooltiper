@@ -10,3 +10,8 @@ This tool is accurate in most cases but still need some additional tuning.
 - activate it `venv\Scripts\activate`
 - install requirements `pip install -r requirements.txt`
 - run `python main.py`
+- launch Diablo 4 (if not launched already)
+- hover over an item and enable comparation
+- hit `F1` and wait for a few seconds for window to appear to the left of your mouse cursor
+    - you can hover over the window to close it immediately
+- to exit the program hit `Shift+Esc`
