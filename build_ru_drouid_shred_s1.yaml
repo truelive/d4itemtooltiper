@@ -1,0 +1,90 @@
+---
+build:
+  name: Druid Shred
+  items:
+    - item: Топор
+      affixes:
+        - type: "% Damage to Poisoned"
+          weight: 1
+        - type: "% к урону"
+          weight: 1
+        - type: "% к урону по уязвимым"
+          weight: 1
+        - type: " к силе воли"
+          weight: 1
+    - item: Тотем
+      affixes:
+        - type: "% к сокращению"
+          weight: 1
+        - type: "% к шансу критического"
+          weight: 1
+        - type: "% к получаемому урону при"
+          weight: 1
+        - type: "% к получаемому урону от"
+          weight: 1
+    - item: Амулет
+      affixes:
+        - type: "Ranks of The Наполнение ядом"
+          weight: 1
+        - type: "% к получаемому урону при"
+          weight: 1
+        - type: "% к общей броне"
+          weight: 1
+        - type: "% к сокращению"
+          weight: 1
+    - item: Сапоги
+      affixes:
+        - type: "% Damage Reduction while Injured"
+          weight: 1
+        - type: "% к скорости передвижения"
+          weight: 1
+        - type: " к силе воли"
+          weight: 1
+        - type: "% к общей броне"
+          weight: 1
+    - item: нагрудный
+      affixes:
+        - type: "% к общей броне"
+          weight: 1
+        - type: "% к получаемому урону при"
+          weight: 1
+        - type: "% к получаемому урону от"
+          weight: 1
+        - type: "Maximum Life"
+          weight: 1
+    - item: Перчатки
+      affixes:
+        - type: " к уровню умения \"Разрывание"
+          weight: 1
+        - type: "% к скорости атаки"
+          weight: 1
+        - type: "% к вероятности критического"
+          weight: 1
+        - type: " к силе воли"
+          weight: 1
+        - type: "Lucky Hit: Up to a \\d% Chance to Restore"
+          weight: 1
+    - item: ножная
+      affixes:
+        - type: "% к общей броне"
+          weight: 1
+        - type: "% к получаемому урону при"
+          weight: 1
+        - type: "% к получаемому урону от"
+          weight: 1
+        - type: "Maximum Life"
+          weight: 1
+        - type: " к силе воли"
+          weight: 1
+    - item: Кольцо
+      affixes:
+        - type: "% к вероятности критического"
+          weight: 1
+        - type: "% к урону по уязвимым"
+          weight: 1
+        - type: " Maximum Life"
+          weight: 1
+        - type: " к регенерации"
+          weight: 1
+        - type: "% к вероятности удачного"
+          weight: 1

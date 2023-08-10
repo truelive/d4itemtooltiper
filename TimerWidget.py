@@ -12,7 +12,7 @@ class TimerWidget:
         self.item_width = int(display_cfg['item_width'])
         self.item_heigh = int(display_cfg['item_heigh'])
         self.item_power_hit_color = display_cfg['item_power_hit_color']
-        self.item_power_hit = display_cfg['item_power_hit']
+        self.item_power_hit = int(display_cfg['item_power_hit'])
         self.affix_miss_color = display_cfg['affix_miss_color']
         self.affix_hit_color = display_cfg['affix_hit_color']
         self.font = display_cfg['font']
