@@ -100,8 +100,8 @@ def recognize_item(config):
         print("Result CV \n ", eq_item_text + "\n" + new_item_text, "\n--- OCR time--", int(diff.total_seconds() * 1000))
         # separate - since both images are recognized
         d4_items = [] 
-        d4_items.append(d4_item(lang_constants, new_item_text))
         d4_items.append(d4_item(lang_constants, eq_item_text))
+        d4_items.append(d4_item(lang_constants, new_item_text))
         # parse text into sensible stats 
         # evaluate against a build according to slot
         # show overlay window with autohide to show evaluation
