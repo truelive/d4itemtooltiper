@@ -68,8 +68,8 @@ def tess_ocr(img_b):
 def recognize_item(config):
     try:
         start_time = datetime.datetime.now()
-        #screenshot = pyautogui.screenshot()
-        screenshot = Image.open(base_lang_path + '/sample.png')
+        screenshot = pyautogui.screenshot()
+        #screenshot = Image.open(base_lang_path + '/sample.png')
         #screenshot.show()
         screen = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2GRAY)
         comparing_bot, equipped_top = pool.map(find_image, [(screen, comparing_bot_image),(screen, equipped_top_image)])
