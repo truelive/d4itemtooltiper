@@ -63,6 +63,7 @@ def tess_ocr(img_b):
     img = img.crop(img_box)
     img = img.resize((rescale(img.width), rescale(img.height)))
     #img.show()
+    print(f"launching tesseract {tess_par} on {img_box}")
     return pytesseract.image_to_string(img, config=tess_par, lang=tess_lang)
 
 def recognize_item(config):
@@ -92,6 +93,7 @@ def recognize_item(config):
         #custom_config = r'--oem 3 --psm 6'
         tess_par = config['tesseract']['params']
         tess_lang = config['tesseract']['lang']
+        print("pool params ", [(screenshot, eq_item_box, tess_par, tess_lang), (screenshot, new_item_box, tess_par, tess_lang)])
         item_texts = pool.map(tess_ocr, [(screenshot, eq_item_box, tess_par, tess_lang), (screenshot, new_item_box, tess_par, tess_lang)])
         new_item_text = item_texts[1]
         eq_item_text = item_texts[0]
@@ -102,12 +104,7 @@ def recognize_item(config):
         d4_items = [] 
         d4_items.append(d4_item(lang_constants, eq_item_text))
         d4_items.append(d4_item(lang_constants, new_item_text))
-        # parse text into sensible stats 
-        # evaluate against a build according to slot
-        # show overlay window with autohide to show evaluation
-        if d4_items is None:
-            return
-        print(map(str, d4_items))
+        print(list(map(str, d4_items)))
         w = TimerWidget.TimerWidget(config)
         w.renderItems(d4_items, pyautogui.position())
         diff = datetime.datetime.now() - text_captured
@@ -152,8 +149,9 @@ if __name__ == '__main__':
     base_lang_path = f'config/lang/{language}'
     lang_constants.read(base_lang_path + '/constants.ini', 'UTF-8')
 
-    equipped_top_image = cv2.imread(base_lang_path + '/equipped.png', cv2.IMREAD_GRAYSCALE)
-    comparing_bot_image = cv2.imread(base_lang_path + '/stash_comparing.png', cv2.IMREAD_GRAYSCALE)
+    resolution = config['DEFAULT']['resolution']
+    equipped_top_image = cv2.imread(base_lang_path + '/'+ resolution +'_equipped.png', cv2.IMREAD_GRAYSCALE)
+    comparing_bot_image = cv2.imread(base_lang_path + '/'+ resolution +'_stash_comparing.png', cv2.IMREAD_GRAYSCALE)
 
     weapon_types_list = lang_constants['Game.Items']['weapon_names'].split(',')
     item_types_list = lang_constants['Game.Items']['item_names'].split(',') 
@@ -164,6 +162,7 @@ if __name__ == '__main__':
     print(build)
     pool = Pool(2)
     func = lambda : recognize_item(config)
+    print("d4_itemtooltiper - 0.0.4")
     # func()
     #freeze_support()
     keyboard.add_hotkey(config['DEFAULT']['parse_key'], func)
