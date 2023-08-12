@@ -163,6 +163,8 @@ if __name__ == '__main__':
     pool = Pool(2)
     func = lambda : recognize_item(config)
     print("d4_itemtooltiper - 0.0.4")
+    pytesseract.pytesseract.tesseract_cmd = config['tesseract']['tesseract_cmd']
+    print(pytesseract.pytesseract.tesseract_cmd)
     # func()
     #freeze_support()
     keyboard.add_hotkey(config['DEFAULT']['parse_key'], func)

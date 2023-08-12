@@ -6,6 +6,9 @@ This tool is accurate in most cases but still need some additional tuning.
 # HOW TO START
 - install python 3.8
 - install tesseract from here https://github.com/tesseract-ocr/tesseract#installing-tesseract or https://tesseract-ocr.github.io/tessdoc/Installation.html
+    - you can add the tesseract installation directory to your PATH. To check that everything is working - `tesseract` command in your terminal should run succesfully
+    - alternatively you can modify `tesseract_cmd` in `config.ini` to point at the tesseract itself
+        - `tesseract_cmd = C:\Program Files\Tesseract-OCR\tesseract.exe`
 - create you virtual env `python -m venv venv`
 - activate it `venv\Scripts\activate`
 - install requirements `pip install -r requirements.txt`
